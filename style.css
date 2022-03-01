@@ -38,11 +38,127 @@ appearance: none !important;
 border-radius: 0;
 }
 
+:root {
+    --primary: #ffeedf;
+    --secondary: #125434;
+}
 
 * {
     font-family: 'Space Grotesk', sans-serif;
+    color: var(--secondary);
+}
+
+body {
+    background-color: var(--primary);
 }
 
 .container {
+    margin: 100px auto;
     max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 400px;
+    position: relative;
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+.index {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    left: -20px;
+    background-color: var(--primary);
+    transform: translate(-50%, -50%);
+    color: var(--secondary);
+    border: 2px solid var(--secondary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* right: 0; */
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    font-weight: 700;
+    padding: 12px;
+    color: var(--secondary);
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+}
+
+button {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    right: -10px;
+    bottom: -10px;
+    color: var(--secondary);
+    background-color: var(--primary);
+    font-size: 14px;
+    /* transform: translate(10%, 20%); és right, bottom 0-val uez lenne*/
+    border: 2px solid var(--secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card h2, .card p {
+    color: var(--primary);
+}
+
+h2 {
+    font-size: 36px;
+    min-height: 90px;
+    border-bottom: 2px solid var(--primary);
+}
+
+.card p {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+button .arrow {
+    font-size: 36px;
+}
+
+button .details {
+    margin: 0 auto;
 }

@@ -3,3 +3,4 @@
 //pos.absolute right - ikon jobbra menjen
 //1-esek, gombok absolutre-tal vannak odatéve
 //Mango Bayhez képest -left és -akármi
+//https://github.com/bsamu/exampractice-sitebuild
